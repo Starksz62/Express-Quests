@@ -14,5 +14,5 @@ app.get("/api/users", userControllers.getUsers);
 app.get("/api/users/:id", userControllers.getUserById);
 app.post("/api/users",userControllers.postUser)
 app.put("/api/users/:id",userControllers.putUser)
-
+app.delete("/api/users/:id",userControllers.deleteUser)
 module.exports = app;
